@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista familiares</title>
+</head>
+<body>
+    <ul>
+        {% for familiares in lista_familiares %}
+            <li><u><b>Nombre:</b></u> {{familiares.nombre}}</li>
+            <li><u><b>Numero_telefono:</b></u> {{familiares.numero_tel}}</li>
+            <li><u><b>Fecha_Nacimiento:</b></u> {{familiares.fecha_nac}}</li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
